@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnboardActivity">
+
+    <ImageView
+        android:id="@+id/iv_splash_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/tv_manage_your_tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/jost"
+        android:text="Manage your tasks"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_splash_screen"
+        app:layout_constraintStart_toStartOf="@+id/iv_splash_screen"
+        app:layout_constraintTop_toBottomOf="@+id/iv_splash_screen" />
+
+    <TextView
+        android:id="@+id/tv_description_splash_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost"
+        android:text="@string/organize_plan_and_collaborate_on_tasks_with_mtodo_your_busy_life_deserves_this_you_can_manage_checklist_and_your_goal"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_manage_your_tasks"
+        app:layout_constraintTop_toBottomOf="@+id/tv_manage_your_tasks"
+        app:layout_constraintEnd_toEndOf="@id/tv_manage_your_tasks"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_get_started_splash_screen"
+        android:layout_width="200dp"
+        android:layout_height="44dp"
+        android:backgroundTint="@color/background"
+        android:fontFamily="@font/jost"
+        android:text="Get Started"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_description_splash_screen"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description_splash_screen" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
